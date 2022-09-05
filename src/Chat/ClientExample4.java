@@ -1,4 +1,4 @@
-package Multicast;
+package Chat;
 
 import javax.swing.*;
 import java.awt.*;
@@ -41,6 +41,11 @@ class ClientExample4 extends JFrame implements ActionListener {
             else
                 sex = "여자";
             connection(id, name, sex);
+        }
+
+        //종료 버튼 추가
+        if(e.getSource() == login.b2){
+            System.exit(0);
         }
 
     }
